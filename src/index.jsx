@@ -8,7 +8,12 @@ import { createStore, combineReducers } from 'redux';
 import App from './components/app';
 import '../assets/stylesheets/application.scss';
 
+import messagesReducer from '../reducers/messages_reducer.js';
+import selectedChannelreducer from '../reducers/selected_channel_reducer.js';
+
 // State and reducers
+const identityReducer = (state = null) => state;
+
 const initialState = {
   messages: [],
   channels: ['general', 'Paris', 'react', 'RubyOnRails'],
